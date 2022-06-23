@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <!--icons link-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">
+            <i class='bx bx-navigation'></i>
+            <div class="logo_name">Project</div>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav_list">
+    <li>
+        <a href="#">
+            <i class='bx bx-flag'></i>
+            <span class="links_name">Current Position</span>
+        </a>
+        <!--<span class="links name">Dashboard</span>-->
+    </li>
+    
+    <li>
+        <a href="#">
+            <i class='bx bx-map-alt'></i>
+            <span class="links_name">Vehicle List</span>
+        </a>
+        <!--<span class="links name">Dashboard</span>-->
+    </li>
+  
+    </ul>
+<div class="logout">
+    <i class='bx bx-log-out' id="log_out"></i>
+</div>
+    </div>
+    <script>
+        let btn =document.querySelector("#btn");
+        let sidebar=document.querySelector(".sidebar");
+
+        btn.onclick=function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
